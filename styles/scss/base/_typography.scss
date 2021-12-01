@@ -1,0 +1,131 @@
+html {
+  background-color: $base-background-color;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $weight-book;
+  line-height: $base-line-height;
+
+  /*for medium displays, less than or equal to 768em */
+  @media screen and (max-width: 768px) {
+    font-size: $small-font-size;
+  }
+
+  /*for medium displays, less than or equal to 600px */
+  @media screen and (max-width: 600px) {
+    font-size: $very-small-font-size;
+  } 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: $weight-book;
+  line-height: $heading-line-height;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: .3em;
+  text-align: center;
+}
+
+.story-title h1 {
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+
+  &.grid-title {
+    color: $accent-color;
+    letter-spacing: .075em;
+    text-shadow: 1px 1px $dark-gray;
+    text-transform: uppercase;
+  }
+}
+
+.chapter-title h2 {
+  letter-spacing: .075em;
+  text-shadow: 1px 1px $dark-gray;
+  text-transform: uppercase;  
+}
+
+.narrative p, ol li {
+  font-size: $base-font-size;
+}
+
+.narrative a {
+  color: $accent-color;
+}
+
+.sidebar-parent {
+  width: 100vw;
+  overflow: visible;
+  position: absolute;
+  left: 0;
+}
+
+// Sidebars
+.sidebar {
+  background-color: #558000;
+  border-radius: 0 0 3px 3px;
+  // Abs positioning makes it not take up vert space */
+  position: absolute;
+  bottom: 2em;
+  //right: 0;
+  // Rotate from top left corner (not default) */
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+
+  a {    
+    color: $base-font-color;
+    font-size: $smallish-font-size;
+    padding: $base-spacing;
+  }
+}

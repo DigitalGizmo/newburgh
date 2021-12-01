@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/// Georgia font stack.
+///
+/// @type List
+
+$georgia: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+
+
+/// Helvetica font stack.
+///
+/// @type List
+
+$helvetica: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+
+
+/// Lucida Grande font stack.
+///
+/// @type List
+
+$lucida-grande: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+
+
+/// Monospace font stack.
+///
+/// @type List
+
+$monospace: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+
+
+/// Verdana font stack.
+///
+/// @type List
+
+$verdana: "Verdana", "Geneva", sans-serif;
+
+
+/// Google's Libre Baskerville
+
+$libre-baskerville: 'Libre Baskerville', serif;
+
+
+/// Futura font stack (added by Juliet for Maine State Museum - Labor Mural)
+///
+/// local truetype font installed on iPad (jan2019)
+
+$futura: "futura", sans-serif;
+
+
+/// Fontin font stack (added by Juliet for Mercy Hospital)
+///
+/// local otf font installed on iPad (apr2019)
+
+
+$fontin: "Fontin", Optima, Serif;
+/// Officina Sans ITC font stack (added by Juliet for Urban Renewal, Oct2019)
+
+$officina-sans-itc: "itc-officina-sans-pro", sans-serif;
+

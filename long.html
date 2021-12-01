@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Albany Lost Places/Displaced People - Prototype</title>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+	   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	   crossorigin=""/>
+
+	<link rel="stylesheet" href="styles/css/scroll-story.css" type="text/css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/lfr0kyk.css">
+
+	<!-- Make sure you put this AFTER Leaflet's CSS -->
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+	integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+	crossorigin=""></script>
+
+</head>
+
+<body>
+	<nav class="main-menu">
+		<ul>
+			<li>
+				<a href="http://app.picturingurbanrenewal.org/">home</a>
+			</li>
+			<li class="selected">
+				<a href="http://app.picturingurbanrenewal.org/cities">4 cities / 4 stories</a>
+			</li>
+			<li>
+				<a href="../index.html?mocknum=8">personal stories</a>
+			</li>
+			<li>
+				<a href="http://app.picturingurbanrenewal.org/visuals">visual record</a>
+			</li>
+			<li class="last-menu-item">
+				<a href="http://app.picturingurbanrenewal.org/places">places</a>
+			</li>
+		</ul>		
+	</nav>
+
+	
+	<div id="chapter1-title" class="chapter-title">
+		<h2>The Immediate Response</h2>
+		<nav class="dots dots-fillup"> 
+			<ul>
+				<li class="current"><a href="#chapter1">The Immediate Response</a></li>
+				<li><a href="#chapter2" title="Hope or Hoax?">Hope or Hoax?</a></li>
+				<li><a href="#chapter3">Before the South Mall</a></li>
+				<li><a href="#chapter4">Lost Homes, Uprooted Neighborhoods</a></li>
+				<li><a href="#chapter5">Designing the South Mall</a></li>
+				<li><a href="#chapter6">Where Did All The People Go?</a></li>
+				<li><a href="#chapter7">98-Acre Wasteland</a></li>
+			</ul>
+			<span class="dot-title">title will go here</span>
+		</nav>
+	</div>
+
+	<section id="chapter1">	
+		
+		<div id="image-sequence1" class="image-panel"> 
+			<div>
+				<img src="http://dev.picturingurbanrenewal.org/prod-assets/places/newburgh/images/james-strawn.jpg"/>
+			</div>
+			<div>
+				<img src="http://dev.picturingurbanrenewal.org/prod-assets/places/newburgh/images/lillian-pierce.jpg"/>
+			</div>
+			<div>
+				<img src="http://dev.picturingurbanrenewal.org/prod-assets/places/newburgh/images/st-sophia.jpg"/>
+			</div>
+			<div>
+				<img src="http://dev.picturingurbanrenewal.org/prod-assets/places/newburgh/images/hunters-pharmacy.jpg"/>
+			</div>
+			<div>
+				<img src="http://dev.picturingurbanrenewal.org/prod-assets/places/newburgh/images/domenico-ingemie.jpg"/>
+			</div>
+			<div>
+				<img src="http://dev.picturingurbanrenewal.org/prod-assets/places/newburgh/images/alice-stoutenburgh.jpg"/>
+			</div>
+		</div><!-- /image-panel -->
+
+		<div id="caption-sequence1" class="caption-panel">
+
+			<div>
+				<p class="gallery-caption">Jimmy Strawn in his Market District apartment, where he had lived since the 1940s. From the NYS Archives.</p>
+				<p class="gallery-quote">&ldquo;&hellip;.tearing down &lsquo;these 50 and 60-year-old buildings might make for some decent places in which to live.&rsquo;&rdquo;</p>
+				<p>&nbsp;</p>
+			</div>
+
+			<div id="lillian">
+				<p class="gallery-caption">Lillian Pierce owned the Pierce Hotel along with several other Rooming House District residential properties. Courtesy of the <i>Times Union.</i></p>
+				<p class="gallery-quote">&ldquo;How is it going to help downtown? Naturally, we don&rsquo;t want to move. Even the news may scare my people away. And they&rsquo;ve been coming here for years.&rdquo;</p>
+			</div>
+
+			<div>
+				<p class="gallery-caption">Rev. George Gallas was pastor of St. Sophia Greek Orthodox Church, which was in the process of expanding. From the NYS Archives.</p>
+				<p class="gallery-quote">&ldquo;Up until last night, the plans were going through. We had bought up 10 pieces of property. We knocked down buildings. Then today we read the papers. It was a blockbuster.&rdquo;</p>
+			</div>
+
+			<div id="hunters">
+				<p class="gallery-caption">Pharmacist Ken Hunter had been in business up the block from the Cathedral since the Great Depression. From the NYS Archives.<br/>
+				<a href="../index.html?mocknum=9" class="caption-link">Read the Personal Story: Hunter&apos;s Pharmacy</a>
+				</p>
+
+				<p class="gallery-quote">&ldquo;I&rsquo;ve been here 33 years this November. I&rsquo;ve established a very good business and I would like to finish my life of work here. It would be too great a hardship to try and start over again. Why don&rsquo;t they just take the property that had deteriorated and leave the good paying businesses and properties alone?&rdquo;</p>
+			</div>
+
+			<div>
+				<p class="gallery-caption">Domenico Ingemie owned this house near the Cathedral with his wife Venera. From the Albany Institute.</p>
+				<p class="gallery-quote">&ldquo;We have lived in this house for 35 years. It is all we have. We are not of the age where we can be put out of our home and start all over again. How are we going to get accustomed to or make new friends if we have to move out of an area that all our friends are in.&rdquo;</p>
+			</div>
+
+			<div>
+				<p class="gallery-caption">Down the block from Alice Stoutenburgh&rsquo;s Lancaster Street home in the Rooming House District. From the NYS Archives.</p>
+				<p class="gallery-quote">&ldquo;We bought this place for taxes 20 years ago. This was a respectable neighborhood then. Now a woman doesn&rsquo;t dare go out on the street alone. It&rsquo;s a disgrace to the capital city&hellip;. My house is kept in good repair but I&rsquo;m fighting a losing battle on this street. Even before this happened, I&rsquo;d been looking for a two-family home in some other part of the city.&rdquo;</p>
+			</div>
+
+		</div><!-- /caption-panel -->
+
+
+		<div class="narrative">	
+
+			<p>In the summer of 1962, a WRGB film crew uncovered a similar range of opinions for the television documentary <i>The South Mall Project: Hoax or Hope?</i>  As a group, the residents and business owners interviewed welcomed economic development but worried about lost homes. They spoke to reporters despite the Democratic machine&rsquo;s pressure to remain quiet. To hear what they had to say, click on the video below.</p>
+
+		<div id="video-content">
+
+			<video class="both" width="720" height="405" controls="controls">
+				<source src="media/Hoax-Hope-interviews.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+
+		</div>
+
+<!-- 		<div>
+				<iframe width="90%" height="460" src="https://www.youtube.com/embed/KQkNWFaRpW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>Courtesy Sinclair Broadcast Group. From M.E. Grenander Department of Special Collections and Archives, University at Albany.</p>
+			</div> -->
+
+		</div><!-- /narrative -->	
+
+
+	</section> <!-- /chapter1 -->
+
+	<div id="chapter2-title" class="chapter-title">
+		<h2>Hope or Hoax?</h2>
+		<nav class="dots dots-fillup">
+			<ul>
+				<li><a href="#chapter1">The Immediate Response</a></li>
+				<li class="current"><a href="#chapter2">Hope or Hoax?</a></li>
+				<li><a href="#chapter3">Before the South Mall</a></li>
+				<li><a href="#chapter4">Lost Homes, Uprooted Neighborhoods</a></li>
+				<li><a href="#chapter5">Designing the South Mall</a></li>
+				<li><a href="#chapter6">Where Did All The People Go?</a></li>
+				<li><a href="#chapter7">98-Acre Wasteland</a></li>
+			</ul>
+			<span class="dot-title"></span>
+		</nav>
+	</div>
+
+	<section id="chapter2">
+
+		<div class="full-image">
+			<img src="images/urban-blight.jpg"/>
+			<p>South Mall supporters used photographs such as this to make the case for redevelopment. From the NYS Archives, University at Albany.</p>
+		</div>
+
+		<div class="narrative">
+			
+			<p>The South Mall was unlike most other urban renewal project in the United States. It was a state-initiated plan imposed on a reluctant city with minimal input from local leaders. Albany Mayor Erastus Corning promptly denounced the South Mall plan and brought suit to prevent its implementation. Having just won a sixth term as mayor, he had a 20-year history of fighting off Republican governors&rsquo; attempts to intervene in the capital city&rsquo;s affairs.</p>
+
+			<div>
+				<img src="images/corning-mic.jpg"/>
+				<p>Mayor Corning&rsquo;s press conference. Note how the photograph was altered for publication. Courtesy of the <i>Times Union.</i></p>
+			</div>
+
+			<p>At his March 30, 1962 press conference, Mayor Corning condemned the South Mall as a &ldquo;cruel hoax.&rdquo; Asked his opinion of the State land seizure, he responded,  &ldquo;Well I think it&rsquo;s a tragedy to the people living in the area. There are very, very good buildings, many people owned their own homes for many years, the relocation problem is staggering&hellip;.&rdquo;</p>
+
+			<p>Corning told the reporters he had received hundreds of letters applauding his opposition to the State plan. Business- and homeowners, Elinor and Leo Mullen, praised the mayor&rsquo;s efforts to prevent seizure of their property and destruction of the tight-knit community in which they lived. She wrote, &ldquo;We hope and pray that God will give you the strength to fight against this communistic method for improving the city of Albany&hellip;.&rdquo;</p>
+
+			<p>Patricia Beaupre called on the mayor to protect her family and neighbors. &ldquo;What good are these monuments,&rdquo; she wrote. &ldquo;The people won&rsquo;t be around to see them, if the houses keep being torn down&hellip;. [T]here won&rsquo;t be anyplace for the people to live. Even tearing down new high schools. Please don&rsquo;t let Governor Rockefeller do these cruel things to us.&rdquo;</p>
+
+			<div>
+				<img src="images/rocky-capitol-1962.jpg"/>
+				<p>Nelson Rockefeller in the Capitol, 1962. Courtesy of the <i>Times Union.</i></p>
+			</div>
+
+			<p>Nelson A. Rockefeller, scion of one of America&rsquo;s wealthiest families, aspired to be the nation&rsquo;s &ldquo;buildingest governor.&rdquo; The South Mall was his brainchild. Before taking office, Rocky had played a key role in the design and construction of Rockefeller Center, the Museum of Modern Art, and the United Nations Headquarters in New York City. As governor, he was responsible for a dramatic expansion of the state&rsquo;s highway and university systems.</p>
+
+			<div>
+				<img src="images/rosen-cartoon.jpg"/>
+				<p>Hy Rosen for the <i>Times Union.</i> From the NYS Library.</p>
+			</div>
+
+			<p>To the Governor and his supporters, Albany appeared blighted and in need of revitalization. For this, they blamed the city&rsquo;s Democratic leadership. The chairman of the Citizens United Reform Effort (CURE), a local opposition party, described the mayor&rsquo;s stand on the South Mall as &ldquo;starkly political.&rdquo; He accused the Democratic machine of thriving &ldquo;on decay and deterioration and the miseries of the people.&rdquo; Rule by favors and threats had its greatest impact on the city&rsquo;s poorest residents, and as NAACP official and South Mall resident Harry Vodery pointed out, African Americans bore the brunt of both threats and decay.
+			</p>
+
+			<div class=sidebar-parent>
+				<span class="sidebar essay">
+					<a href="#">The Democratic Machine and Its Critics.</a>
+				</span>
+			</div>
+
+			<p>South Mall boosters argued that reconstruction would beautify Albany and bolster the city&rsquo;s flagging fortunes. The majority of South Mall residents appeared to agree, based on a CURE poll from the summer of 1962. Over the course of a week, 30 volunteers knocked on doors throughout the redevelopment area, asking two questions:</p>
+
+			<ol>
+				<li>Is the South Mall redevelopment project good for Albany</li>
+				<li>Is it good for you and your family?</li>
+			</ol>
+
+			<p>Of 1,386 adults polled, 956 (or 70%) answered yes to the first question. More than half (717) answered yes to the second.</p>
+
+			<p>And yet poll results tell only part of the story, as Hal Juhre explained in an open letter to Mayor Corning and Gov. Rockefeller: &ldquo;&hellip;.Many of the affected residents—60 of whom I interviewed during the recent CURE survey—are confused and concerned as to how the project will affect people. Will it enhance human welfare and dignity or lead to human misery? The most recurrent theme was &lsquo;I&rsquo;m all in favor of progress, so long as no one gets hurt.&rsquo;&hellip;.&rdquo; Rather than wholesale clearance, Juhre proposed rehabilitation with an emphasis on housing. He pointed out that while the area had deteriorated under Democratic leadership, many of the structures were still sound.</p>
+
+			<p>The footage below is from the summer of 1962. It shows what South Mall boosters (on the left) and opponents (on the right) wanted the public to see.</p>
+
+			<div id="video-content">
+
+				<video class="left" width="720" height="405" controls="controls">
+					<source src="media/Hoax-Hope-derelict.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+
+				<video class="right" width="720" height="405" controls="controls">
+					<source src="media/Hoax-Hope-good.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+
+			</div>
+
+<!-- 		<div>
+				<iframe width="90%" height="460" src="https://www.youtube.com/embed/KQkNWFaRpW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<p><i>The South Mall Project: Hoax or Hope?</i>  Courtesy Sinclair Broadcast Group. From M.E. Grenander Department of Special Collections and Archives, University at Albany.</p>
+			</div> -->
+
+		</div><!-- /narrative -->	
+
+	</section> <!-- /chapter2 -->
+
+	<div id="chapter3-title" class="chapter-title">
+		<h2>Before the South Mall</h2>
+		<nav class="dots dots-fillup">
+			<ul>
+				<li><a href="#chapter1">The Immediate Response</a></li>
+				<li><a href="#chapter2">Hope or Hoax?</a></li>
+				<li class="current"><a href="#chapter3">Before the South Mall</a></li>
+				<li><a href="#chapter4">Lost Homes, Uprooted Neighborhoods</a></li>
+				<li><a href="#chapter5">Designing the South Mall</a></li>
+				<li><a href="#chapter6">Where Did All The People Go?</a></li>
+				<li><a href="#chapter7-title">98-Acre Wasteland</a></li>
+			</ul>
+			<span class="dot-title"></span>
+		</nav>
+	</div>
+
+	<section id="chapter3">
+
+		<div class="full-image">
+			<img src="images/pearl-street-shopping.jpg"/>
+			<p>The South Pearl Street Shopping District, 1963. From the NYS Archives. <br/>
+				<a href="../index.html?mocknum=19" class="caption-link">View the Visual Record: South Pearl Street Shopping District</a></p>
+		</div>
+
+		<div class="narrative">	
+			<p>Within the area slated for demolition, South Mall supporters found run-down rentals, broken sidewalks, and vacant storefronts. Critics pointed to churches, schools, family homes, and profitable businesses in other sections. Where and why they looked determined what they saw. The 98-acre redevelopment area encompassed several distinct neighborhoods.</p>
+
+		</div>
+	
+		<!-- GUIDED MAP -->
+
+		<div id="image-sequence3" class="image-panel"> <!-- this WAS id="map-container" --> 
+
+			<div id="mapdiv">
+				<p>map goes here</p>
+			</div>
+			
+		</div>
+
+		<div id="caption-sequence3" class="caption-panel"><!-- Don - there are more map captions to be included in this section -->
+
+			<div id="thing2" class="narrower">
+				<p class="gallery-text">For this guided tour, we put the 40 blocks lost to the South Mall back on the map. A Sanborn Fire Insurance map, updated by hand to 1961, overlays a map of present-day Albany. Some landmarks remain standing, including the New York State Capitol, the Governor&apos;s Mansion, and Cathedral of the Immaculate Conception. Many others were lost to the bulldozer.</p>
+			</div>
+			<div id="thing3" class="narrower">
+				<p class="gallery-text">State Street Office District. Adjacent to the New York State Capitol and Alfred E. Smith State Office Building, this was a prime location for lawyers&rsquo; and lobbyists&rsquo; offices, as well as for taverns where lawyers and lobbyists could rub shoulders with legislators. Elegant homes and apartment buildings lined State and Chestnut streets.</p>
+			</div>
+			<div id="thing4" class="narrower">
+				<p class="gallery-text">Rooming House District. This neighborhood was home to a large population of elderly single men and women. Conveniently near the Capitol, it also housed unmarried state workers and out-of-town legislators. Rooming houses were both business and home to the divorced or widowed women who owned most of them. Hudson Avenue shops and eateries catered to the residents of this district.</p>
+			</div>
+			<div id="thing5" class="narrower">
+				<p class="gallery-text">Hudson Avenue Shopping District. The small businesses in this shopping district were geared toward the needs of rooming house residents—a combination of groceries, restaurants and bars, laundries, tailors, barbershops, and shoe repair stores. Business owners, employees, and other tenants lived in apartments above the storefronts.</p>
+			</div>
+			<div id="thing6" class="narrower">
+				<p class="gallery-text">Cathedral Area Neighborhood. For many in this largely residential district, life centered around the Catholic Church and its schools. The population was predominantly white, but as a result of the Great Migration, a growing number of Southern blacks had moved in over the past decades. A smattering of small, mom-and-pop businesses served local residents. This was the neighborhood canvassed by Democratic Party operatives soon after the State announced the South Mall plan.</p>
+			</div>
+			<div id="thing7" class="narrower">
+				<p class="gallery-text">Market District. The massive Lyon Block, a former print factory, dominated this area, which encompassed the city farmers market and specialized in produce sales and distribution. Residents lived in rental units above stores and on the edges of this district. This is where the local Boys Club and Methodist Inner City Mission got their start.</p>
+			</div>
+			<div id="thing8" class="narrower">
+				<p class="gallery-text">South Pearl Street Shopping District. Best known for bargain clothing, shoes, and furniture, this section drew shoppers from across the region. It also included upscale outlets like B. J. Koblenz Jewelry and M. Solomon Furs and Fashion.</p>
+			</div>
+			<div id="thing9" class="narrower">
+				<p class="gallery-text">The Gut. Factories stood side-by-side with single-room-occupancy hotels, missions, and taverns in this section of the city. At the turn of the twentieth-century, it had been home to newly-arrived European immigrants. Decades later, Southern migrants settled here before moving up the hill to more prosperous neighborhoods.</p>
+			</div>
+			<div id="thing10" class="narrower">
+				<p class="gallery-text">
+					<a href="../index.html?mocknum=14" class="caption-link">Explore the Interactive Map: Albany&apos;s Lost Places</a>
+				</p>
+			</div>
+
+			<!-- <p>&nbsp;</p> -->
+
+		</div><!-- /caption-panel -->
+
+		<div class="narrative">	
+			<p>To learn more about the people who lived and worked in these lost neighborhoods, visit the <a href="../index.html?mocknum=11">Personal Stories</a> section of this website. To see the sights, check out the <a href="../index.html?mocknum=15">Visual Record</a> section. You can also <a href="../index.html?mocknum=14">Explore the Interactive Map</a>, which puts displaced people and demolished structures back where they once belonged.</p>
+
+		</div><!-- /narrative -->	
+
+	</section> <!-- /chapter3 -->
+
+
+
+	<div id="chapter4-title" class="chapter-title">
+		<h2>Lost Homes, Uprooted Neighborhoods</h2>
+		<nav class="dots dots-fillup">
+			<ul>
+				<li><a href="#chapter1">The Immediate Response</a></li>
+				<li><a href="#chapter2">Hope or Hoax?</a></li>
+				<li><a href="#chapter3">Before the South Mall</a></li>
+				<li class="current"><a href="#chapter4">Lost Homes, Uprooted Neighborhoods</a></li>
+				<li><a href="#chapter5">Designing the South Mall</a></li>
+				<li><a href="#chapter6">Where Did All The People Go?</a></li>
+				<li><a href="#chapter7-title">98-Acre Wasteland</a></li>
+			</ul>
+			<span class="dot-title"></span>
+		</nav>
+	</div>
+
+	<section id="chapter4">
+
+		<div class="full-image">
+			<img src="images/rocky-construction.jpg"/>
+			<p>Rockefeller hands out souvenir bricks. Photo by Bob Paley. Courtesy of the <i>Times Union.</i></p>
+		</div>
+
+		<div class="narrative">
+			
+			<p>The City&rsquo;s effort to prevent the South Mall failed. On June 29, 1962, the Appellate Division of the State Supreme Court ruled in the favor of the State. Twelve days later, the first South Mall area building was demolished at a press event featuring Gov. Rockefeller behind the controls of a 60-ton crane. He ceremonially removed a bucket of bricks and then handed them out as souvenirs to the crowd of onlookers.</p>
+
+			<div>
+				<img src="images/abarca.jpg"/>
+				<p>Francisca Abarca, with tenants Victor and Lydia Balls, stands beside the collapsed wall of 228 Hamilton Street. Courtesy of the <i>Times Union.</i></p>
+			</div>
+
+			<p>The following evening, Francisca Abarca, her two children, and tenants became the first of almost 7,000 people displaced for the South Mall. Their house was next-door to the demolished structure and relied on it for support, as was true of most of the area&rsquo;s many row houses. The destruction of one building endangered adjacent structures&mdash;an apt metaphor for the damage caused by displacement. Forcing area residents out of their homes and neighborhoods created social and emotional as well as economic hardship.</p>
+
+			<p>Displacement hit hardest elderly residents, like Fred Binseel, a retired Capitol security guard, who lived alone on a limited income. When forced to move, he was 83 years old and recently widowed. Fred never adjusted to life in his new apartment. He complained that it smelled of gas and didn’t trust the water. He suspected his new neighbors and landlord of stealing from him. The extent to which these accusations derived from actual living conditions versus emotional distress is unclear.</p>
+
+
+			<div>
+				<img src="images/lazarus-kontis.jpg"/>
+				<p>Lazarus Kontis in front of his shoe repair store, ca. 1950. Above the store was the apartment he shared with his family. Courtesy of Angelo Kontis.</p>
+			</div>
+
+			<p id="root-shock">Lazarus Kontis, a long-time Hudson Avenue business owner, experienced a similar decline after losing both home and business to the South Mall. Even after closing shop and moving into a new second-floor apartment, Lazarus kept trying to walk down the stairs to the now non-existent store below, as he had every morning for the past 53 years. This loss appears to have triggered or accelerated a decline in health. In August 1966, three years after the move, Lazarus died, institutionalized and suffering from dementia.
+			</p>
+
+			<p>Psychologist Marc Fried analyzed the impact of displacement on the former residents of Boston&apos;s West End, a section similar in demographics to the South Mall redevelopment area. In 1963, Fried described being forcibly dispersed as a &ldquo;highly disturbing and disruptive&rdquo; experience evoking an emotional response akin to grief. &ldquo;It&apos;s just like a plant,&rdquo; one of his informants told him, &ldquo;when you tear up the roots, it dies!&rdquo; More recently, psychiatrist Mindy Fullilove diagnosed the trauma of displacement as &ldquo;root shock.&rdquo;
+			</p>
+			
+			<div class=sidebar-parent>
+				<span class="sidebar essay">
+					<a href="../index.html?mocknum=21">Urban Renewal and &ldquo;Root Shock&rdquo;</a>
+				</span>
+			</div>
+
+			<div>
+				<img src="images/leonard-family.jpg"/>
+				<p>Emma Leonard and her children take one last walk around their old neighborhood. Courtesy of the <i>Times Union.</i></p>
+			</div>
+
+			<p>&ldquo;It&apos;s very hard for us to pull up roots. We had a lovely life here,&rdquo; Emma Leonard told Dick Weber on December 22, 1964, the day she and her family became the last to move out of the South Mall redevelopment area. By that time, the Leonard family home overlooking Lincoln Park was surrounded by the rubble-strewn remnants of the Italian-Irish Catholic community into which Emma had been born, grown up, married, and become a mother. She described witnessing its destruction over the past two-and-a-half years as a &ldquo;nightmare.&rdquo;</p>
+
+			<p>To learn more about people who once lived and worked in the area demolished for the South Mall, visit the <a href="../index.html?mocknum=11">Personal Stories</a> section of this website.</p>
+
+		</div><!-- /narrative -->
+
+	</section> <!-- /chapter4 -->
+
+
+
+	<div id="chapter5-title" class="chapter-title">
+		<h2>Designing the South Mall</h2>
+		<nav class="dots dots-fillup">
+			<ul>
+				<li><a href="#chapter1">The Immediate Response</a></li>
+				<li><a href="#chapter2">Hope or Hoax?</a></li>
+				<li><a href="#chapter3">Before the South Mall</a></li>
+				<li><a href="#chapter4">Lost Homes, Uprooted Neighborhoods</a></li>
+				<li class="current"><a href="#chapter5">Designing the South Mall</a></li>
+				<li><a href="#chapter6">Where Did All The People Go?</a></li>
+				<li><a href="#chapter7-title">98-Acre Wasteland</a></li>
+			</ul>
+			<span class="dot-title"></span>
+		</nav>
+	</div>
+
+	<section id="chapter5">
+
+		<div class="full-image">
+			<img src="images/inspecting-model.jpg"/>
+			<p>Mayor Corning and Gov. Rockefeller inspect a model of the South Mall, April 23, 1963. Courtesy of the <i>Times Union.</i></p>
+		</div>
+
+		<div class="narrative">
+			
+			<p>Untrained as an architect, Rocky played an unusually active role in the design of the South Mall. His (literally) back-of-the envelope concept sketch, inspired by Potala Palace high above Lhasa, Tibet, would become the basis of the massive modernist office and cultural complex most commonly compared to the Brazilian capital of Brasilia. Indeed, the governor&rsquo;s aesthetic stamp marked the very foundation of the South Mall, the multi-story, quarter-mile long  platform connecting the Capitol to the Governor&rsquo;s Mansion. This &ldquo;great wall,&rdquo; according to lead architect Wallace K. Harrison, was intended to &ldquo;separate the Mall into a kind of community.&rdquo;</p>
+
+			<p>On April 23, 1963, nine months after demolition began, the State&rsquo;s South Mall plan was finally unveiled at a press event in the Capitol Rotunda. Reviews in the local newspapers were uniformly positive&mdash;not surprising since the newspapers&rsquo; publisher was a member of the Temporary State Commission on the Capital City. &ldquo;Impressive, dramatic, marvelous, terrific, pleasing, magnificent and thrilling&rdquo; were the comments recorded by one Times Union reporter. Mayor Corning enthused, &ldquo;As I look at this magnificent model, I consider it the most significant day in the entire history of Albany and of the State&hellip;. I will do everything in my power to see that it becomes a reality as quickly and in as fine a fashion as is humanly possible.&rdquo;</p>
+
+			<p>These 1963 architectural renderings by Marcel Mutin helped promote the South Mall, particularly when juxtaposed to State photographs of the most rundown sections of the area to be demolished.</p>
+
+		</div><!-- /narrative -->
+
+		<div id="image-sequence5" class="image-panel"> 
+
+			<div>
+				<img src="images/mutin-rendering67.jpg"/><!-- skyline -->
+			</div>
+			<div>
+				<img src="images/mutin-rendering71.jpg"/><!-- long view, marble platform -->
+			</div>
+			<div>
+				<img src="images/mutin-rendering74.jpg"/><!-- the egg, longer view -->
+			</div>
+			<div>
+				<img src="images/mutin-rendering70.jpg"/><!-- the arch -->
+			</div>
+			<div>
+				<img src="images/mutin-rendering73.jpg"/><!-- the walkway -->
+			</div>
+			<div>
+				<img src="images/mutin-rendering66.jpg"/><!-- the tower -->
+			</div>
+			<div>
+				<img src="images/mutin-rendering76.jpg"/><!-- fountains -->
+			</div>
+
+		</div><!-- /image-panel -->
+
+		<div id="caption-sequence5" class="caption-panel">
+
+			<div class="narrower">
+				<p>The South Mall, rising up from the Hudson River basin, would dominate Albany&rsquo;s skyline and reshape its visual identity. From the NYS Archives.</p>
+			</div>
+			<div class="narrower">
+				<p>The white marble platform was inspired by Potala Palace in Lhasa. From the NYS Archives.</p>
+			</div>
+			<div class="narrower">
+				<p>According to John Mesick, who worked on the project as a young architect, The Egg was inspired by the Constantin Brancusi sculpture, &ldquo;Fish.&rdquo; Popular rumor attributes the shape of this structure to the governor&rsquo;s breakfast grapefruit.</p>
+			</div>
+			<div class="narrower">
+				<p>The Arch of Freedom atop the planned cultural complex was never built. This structure was redesigned in 1965 to meet the needs of the State Library, Archives, and Museum. From the NYS Archives.</p>
+			</div>
+			<div class="narrower">
+				<p>The walkway over State Street from the Capitol to the new Justice and Legislative Office buildings was deleted from the final design. Credit: NYS Archives.</p>
+			</div>
+			<div class="narrower">
+				<p>This office tower, the tallest in the city, would become known as the Mayor Erastus Corning 2nd Tower. From the NYS Archives.</p>
+			</div>
+			<div class="narrower">
+				<p>With fountains, public art, and pocket parks, the South Mall was intended as a gathering space, even after work and on weekends. From the NYS Archives.</p>
+			</div>
+
+		</div><!-- /caption-panel -->
+
+		<div class="narrative">
+			
+			<p>To see more South Mall design drawings and other planning documents, visit the <a href="../index.html?mocknum=16">Visual Record</a> section of this website.</p>
+			
+			<p>Outside of Albany, reviews of the $250 million (estimated) capitol complex were considerably less kind. Mostly notably, an unsigned critique in the influential journal Progressive Architecture dismissed the South Mall design as &ldquo;an exercise in architectural pop art.&rdquo; The reviewer blamed the governor and his enablers for its faults. Despite pushback from Rockefeller supporters, the journal&rsquo;s editor stood by the critique, especially criticism of the governor&rsquo;s role in the design process. &ldquo;Quite a few architects are disturbed by this approach to planning,&rdquo; he said. &ldquo;Albany deserves the best, and I don&rsquo;t think it is getting the best.&rdquo;
+			</p>
+
+			<div class=sidebar-parent>
+				<span class="sidebar essay">
+					<a href="#">Architectural Critics and the South Mall</a>
+				</span>
+			</div>
+			
+			<p>Despite criticism, the South Mall project moved inexorably forward.  By the end of 1963, the State had displaced the majority of area residents, and demolition was more than halfway complete.</p>
+
+		</div><!-- /narrative -->
+
+	</section> <!-- /chapter5 -->
+
+
+
+	<div id="chapter6-title" class="chapter-title">
+		<h2>Where Did All The People Go?</h2>
+		<nav class="dots dots-fillup">
+			<ul>
+				<li><a href="#chapter1">The Immediate Response</a></li>
+				<li><a href="#chapter2">Hope or Hoax?</a></li>
+				<li><a href="#chapter3">Before the South Mall</a></li>
+				<li><a href="#chapter4">Lost Homes, Uprooted Neighborhoods</a></li>
+				<li><a href="#chapter5">Designing the South Mall</a></li>
+				<li class="current"><a href="#chapter6">Where Did All The People Go?</a></li>
+				<li><a href="#chapter7-title">98-Acre Wasteland</a></li>
+			</ul>
+			<span class="dot-title"></span>
+		</nav>
+	</div>
+
+	<section id="chapter6">
+
+		<div class="full-image">
+			<img src="images/redevelopment-office.jpg"/>
+			<p>To speed up the process of rehousing displaced residents, the State set up a relocation office in the Hudson Avenue Shopping District. Courtesy of the <i>Times Union.</i></p>
+		</div>
+
+		<div class="narrative">
+			
+			<p>Demolition created a citywide shortage of cheap apartments and furnished rooms. Complicating matters was an informal but well-enforced system of residential segregation, which prevented African Americans from moving into most sections of the city. (It was not until 1968 that the Fair Housing Act prohibited discrimination in housing sales and rentals.) Combined with segregation, displacement meant increased racial concentration as well as overcrowding in those areas of the city that welcomed black homeowners and tenants.</p>
+
+			<p>In the fall of 1963, <i>Times Union</i> reporter Dick Weber described how racial discrimination affected rehousing of displaced black families: &ldquo;The South Mall Relocation Office has helped find new places for several hundred South Mall residents, white and Negro. When a landlord says, &lsquo;Don&rsquo;t send any Negroes,&rsquo; the Mall office crosses the property off the list of available apartments. It has had to cross off quite a few properties.&rdquo;</p>
+
+			<div>
+				<img src="images/mitchell.jpg"/>
+				<p>Steelworker and community leader Arthur Mitchell, second from right, at a Kingsmen Club award ceremony, 1963. Courtesy of the <i>Times Union.</i></p>
+			</div>
+
+			<p>Weber featured the story of Arthur and Yvonne Mitchell, middle-class homeowners with plenty of money for a down payment. Because of their race, the Mitchells struggled to find a new home in the majority-white neighborhoods of west Albany. Arthur allowed the reporter to listen in on a call with his realtor:
+				<ul>
+					<li>Realtor: &ldquo;I talked to that woman again about the house on Glendale Avenue. She said she just won&rsquo;t sell to a Negro&hellip;.&rdquo;</li>
+					<li>Arthur: &ldquo;What can we do then?&rdquo;</li>
+					<li>Realtor: &ldquo;I&rsquo;m sorry. I guess that&rsquo;s all there is to it. There just isn&rsquo;t anything I can do. If she won&rsquo;t sell, she won&rsquo;t sell.&rdquo;</li>
+				</ul>
+			</p>
+
+			<p>As their white neighbors moved out, the Mitchells were stuck in place. Over the course of time, they found themselves surrounded by empty houses on which, Weber wrote, &ldquo;vandals have put the seal of vacancy—smashed windows.&rdquo;</p>
+
+			<div>
+				<img src="images/integration-map.jpg"/>
+				<p>Based on information collected by <i>Times Union</i> reporter William Kennedy, this October 1965 map uses stars to designate the homes of black families living outside of Albany&rsquo;s Arbor Hill and South End neighborhoods. Courtesy of the <i>Times Union.</i></p>
+			</div>
+
+			<p>Arthur and Yvonne Mitchell weathered over a year of insults and refusals before they found a new home on Victor Street. They were one of a group of roughly 82 middle-income black families living outside of Albany&rsquo;s increasingly crowded and dilapidated ghettoes. Black families with fewer economic and social resources were barred from most areas of the city. Taking advantage of their plight, unscrupulous landlords rented displaced families overpriced and substandard housing units.
+			</p>
+
+			<div class=sidebar-parent>
+				<span class="sidebar essay">
+					<a href="#">William Kennedy&rsquo;s Slum Series</a>
+				</span>
+			</div>
+
+			<div>
+				<img src="images/skinner.jpg"/>
+				<p>Ada Skinner (far right) with her sisters and daughter, ca. 1940. All three sisters owned rooming houses on the same block of Jay Street. Courtesy of Tonia Skinner Hannemann.</p>
+			</div>
+
+			<p>Rooming house owners, a mostly white and unmarried, divorced, or widowed group of women, faced different hardships. Because the assessed value of South Mall properties was lower than the cost of similar structures in other parts of the city, many of these women struggled to make ends meet. Starting over in her early 60s, Ada Skinner, for example, was able to afford only one house for the amount she received for two in the South Mall area. In addition to economic stress, she suffered from the loss of community. Before the South Mall, her siblings and closest friends were also her neighbors.</p>
+
+			<div>
+				<img src="images/unidentified.jpg"/>
+				<p>Unidentified rooming house tenant. Like him, most roomers were elderly, single, and on a limited budget. From the NYS Archives.</p>
+			</div>
+
+			<p>The destruction of Albany&rsquo;s Rooming House District created problems not only for owners but also their tenants. Numbering close to one thousand, this group of renters could afford little more than the $4-10 per week they typically paid for a place to sleep and wash up. Local social service agencies, particularly the Tuberculosis Association, predicted an increase in homelessness and a decline in public health, unless this lost housing were replaced. But neither local nor state authorities made plans to accommodate the city’s displaced roomers.
+			</p>
+
+			<div class=sidebar-parent>
+				<span class="sidebar essay">
+					<a href="#">Albany&rsquo;s Rooming Houses and SRO Hotels.</a>
+				</span>
+			</div>
+
+		</div><!-- /narrative -->	
+
+	</section><!-- /chapter6 -->
+
+
+
+	<div id="chapter7-title" class="chapter-title">
+		<h2>98-Acre Wasteland</h2>
+		<nav class="dots dots-fillup">
+			<ul>
+				<li><a href="#chapter1">The Immediate Response</a></li>
+				<li><a href="#chapter2">Hope or Hoax?</a></li>
+				<li><a href="#chapter3">Before the South Mall</a></li>
+				<li><a href="#chapter4">Lost Homes, Uprooted Neighborhoods</a></li>
+				<li><a href="#chapter5">Designing the South Mall</a></li>
+				<li><a href="#chapter6">Where Did All The People Go?</a></li>
+				<li class="current"><a href="#chapter7">98-Acre Wasteland</a></li>
+			</ul>
+			<span class="dot-title"></span>
+		</nav>
+	</div>
+
+	<section id="chapter7">
+
+		<div class="full-image">
+			<img src="images/albany-aerial-cropped.jpg"/>
+			<p>The view from the air, 1965. Courtesy of the <i>Times Union.</i></p>
+		</div>
+
+		<div class="narrative">
+			
+			<p>Although the South Mall area had been emptied of all residents and most buildings by the end of 1964, the City and State were still wrangling over the terms of a financing agreement to underwrite construction. As city and state officials traded accusations, locals greeted the delay with frustration and dark humor.</p>
+
+			<p><i>Times Union</i> columnist John Maguire captured this sentiment: &ldquo;The way things have been going lately around Albany, it begins to look as if the South Mall may never be finished or at best may be delayed a long time. I think we ought to start thinking about what to do with all that open space. Someone here in the office said it looks like good soil for planting celery, but 98 acres set to celery seems a bit much. Someone else said it&rsquo;s terraced so it would make good rice paddies, and another man said why not let Ag-and-Markets use it for an experiment farm where they could grow okra and raise alpaca&hellip;. Another original thinker said it would make a good arena for teenage rumbles, because there&rsquo;s a lot of bricks handy &hellip; and no windows to break. There were two votes for a new municipal golf course, two for a ski slope and one for flooding it and having ice skating.&rdquo;</p>
+
+			<p>For the next several months, Albany residents lived with this uncertainty. Would the State rebuild? Or would the South Mall remain a massive hole in the heart of the city?</p>
+
+		</div><!-- /narrative -->	
+
+	</section> <!-- /chapter7 -->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+
+	<script src="js/scroll-story.js" type="text/javascript"></script>
+	<script src="js/simple-map.js" type="text/javascript"></script>
+
+</body>
+</html>

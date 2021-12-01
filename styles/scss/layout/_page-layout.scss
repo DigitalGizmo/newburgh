@@ -1,0 +1,192 @@
+// story page layout
+body {
+	margin: 0;
+}
+
+// added by Don
+#mapdiv {
+    width:100%;
+    height:100%;
+}
+
+// attempt to move that leaflet attribution from upper right corner
+.leaflet-control-attribution {
+	text-align: right;	
+} 
+
+// attempt to move that leaflet attribution from upper right corner
+.leaflet-control {
+	text-align: right;	
+} 
+
+header.story-title {
+	background-color: rgba(53, 54, 38, 0.75);
+	position: relative;
+	z-index: 10;
+}
+
+.top-image {
+	margin-top: -4.9em;
+	position: relative;
+	z-index: 1;
+}
+
+.narrative {
+	margin: 1em auto 3em auto;
+	max-width: 60%;
+}
+
+// captions for static full screen images and inline images
+.narrative div p, div.full-image p {
+	color: $beige;
+	font-size: $small-font-size;
+	margin: .5em 0 2em 0;
+}
+
+// captions for static full screen images
+div.full-image {
+	position: relative;
+
+	& p {
+		background-color: $dark-gray;
+		border: $base-border;
+		opacity: 0.75;
+		float: left;
+		margin-left: $base-spacing;
+		padding: $base-spacing;
+		position: absolute;
+		bottom: 3em;
+		width: 18%;
+		z-index: 8;
+	}
+}
+
+.narrative div img {
+	border: thin solid rgb(97, 92, 61);
+	width: 90%;
+}
+
+.image-panel	{
+//	image height puts captions in correct vertical position		
+	height: 80vh;
+	position: relative;
+}
+
+.image-panel div 	{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.chapter-title 	{
+	background-color: $accent-color;
+	padding: .75em;
+	position: relative;
+	text-align: center;
+	z-index: 9;
+}
+
+.image-panel div img, div.full-image img	{
+	border: thin solid rgb(97, 92, 61);
+	max-width: 100%;
+	height: auto;
+	margin-bottom: $base-spacing;
+}
+
+// captions for image gallery images
+.caption-panel	{
+	position: relative;
+	z-index: 10;
+	margin: 1em;
+}
+
+.caption-panel div {
+	background-color: $dark-gray;
+	border: $base-border;
+	opacity: 0.75;
+	margin-bottom: 90vh;
+	padding: 1em;
+	margin-top: -10em;
+	width: 60%;
+
+	&.narrower {
+		width: 30%;
+	}
+
+	p.gallery-caption {
+		width: 25%;
+		color: $beige;
+		font-size: $small-font-size;
+		float: left;
+	}
+
+	p.gallery-quote {
+		border-left: $base-border;
+		font-style: italic;
+		font-size: $smallish-font-size;
+		margin-left: 30%;
+		padding-left: 1em;
+	}
+
+	p.gallery-text {
+		font-size: $smallish-font-size;
+		font-style: normal;
+	}
+}
+
+a.caption-link  {
+	color: $accent-color;
+	text-decoration: underline;
+}
+
+// to make the last caption on the guided map taller
+#thing10 p.gallery-text {
+	height: 10em;
+}
+
+// Video
+#video-content {
+	position: relative;
+	padding-top: 56.25%;
+
+  video {
+	position: absolute;
+
+	&.both {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	}
+
+	&.left {
+	left: 0;
+	top: 0;
+	height: 50%;
+	width: 50%;	}
+
+	&.right {
+	left: 51%;
+	top: 0;
+	height: 50%;
+	width: 50%;	}
+  }
+}
+
+// styles for guided map neighborhood labels
+.leaflet-tooltip {
+	background: none;
+	border: none;
+	box-shadow: none;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: $weight-medium;
+	line-height: $heading-line-height;
+	padding: 0;
+//	transform: rotate(40deg);
+
+}
+
+.leaflet-tooltip-left:before, .leaflet-tooltip-right:before {
+	display: none;
+}

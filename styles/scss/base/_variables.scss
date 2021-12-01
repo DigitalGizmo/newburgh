@@ -1,0 +1,73 @@
+// Breakpoints
+$very-small-screen: em(420) !default;
+$small-screen: em(600) !default;
+$medium-screen: em(768) !default;
+$large-screen: em(880) !default;
+
+// Typography
+$base-font-family: $officina-sans-itc;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$very-small-font-size: 0.5em;
+$small-font-size: 0.75em;
+$smallish-font-size: 1em;
+$base-font-size: 1.25em;
+$medlarge-font-size: 1.5em;
+$large-font-size: 1.75em;
+$largest-font-size: 2.25em;
+// for Officina Sans:
+$weight-book: 400;
+$weight-medium: 500;
+$weight-bold: 700;
+// for dots
+$dot-size: 0.5em;
+
+// Line height
+$base-line-height: 1.6;
+$heading-line-height: 1.2;
+
+// Spacing
+$base-spacing: $base-line-height * 1em;
+$tiny-spacing: $base-spacing / 4;
+$small-spacing: $base-spacing / 2;
+$large-spacing: $base-spacing * 2;
+$xlarge-spacing: $base-spacing * 4;
+
+// Colors
+$dark-gray: #353526 !default;
+$medium-gray: #999;
+$beige: #e4e0c7;
+
+// Font Colors
+$base-font-color: $beige !default;
+$light-font-color: $medium-gray;
+$accent-color: #B25900;
+$action-color: $beige;
+$hover-color: lighten($accent-color, 15%);
+
+// Background Colors
+$base-background-color: $dark-gray;
+
+// Borders
+$base-border-color: $beige;
+$base-border: 1px solid $base-border-color;
+$darker-border: 1px solid $medium-gray;
+
+// Radii & Misc
+$base-border-radius: 3px !default;
+$round-border-radius: 60px;
+$base-z-index: 0;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+//shadows
+$title-shadow: 1px 1px 2px black;
+$drop-shadow: 5px 5px 8px rgba(0, 0, 0, 0.65);
+$inside-shadow: 0px -6px 6px 1px $medium-gray inset;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

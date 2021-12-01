@@ -1,0 +1,125 @@
+// navigation
+nav.main-menu {
+	text-align: center;
+
+	li {
+		border-right: thin solid $beige;
+		display: inline;
+		font-size: $small-font-size;
+		font-weight: $weight-book;
+		letter-spacing: .15em;
+		padding: 0 2em;
+		text-transform: uppercase;
+	
+		&.last-menu-item {
+			border-right: none;
+		}
+
+		&.selected a {
+			color: $accent-color;
+		}
+	}
+
+}
+
+#mapdiv img {border: none;}	
+ 
+
+// chapter drop down menu
+.dropdown-menu {
+	display: none;
+}
+
+header.story-title nav#dropdown-parent {
+  position: absolute;
+  top: 35%;
+  left: 1.5em;
+}
+
+.dropdown-menu {
+	list-style-type: none;
+
+	li a {
+		background-color: rgba(178, 89, 0, 0.9);
+		border: 1px solid $accent-color;
+		font-size: $small-font-size;
+		padding: 3px $small-spacing;
+	}
+}
+
+// dot chapter navigation
+.dots ul {
+	cursor: default;
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 1em;
+	top: 40%;
+}
+
+.dots li {
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: $dot-size;
+	margin: 0 $dot-size;
+	position: relative;
+	width: $dot-size;
+}
+
+.dots li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.3);
+	text-indent: -999em;
+	cursor: pointer; /* make the text accessible to screen readers */
+	position: absolute;
+}
+
+// Don's tool tip titles
+.dot-title {
+	color: darken($base-font-color, 25%);
+	display: none;
+	font-size: $small-font-size;
+	position: absolute;
+	right: 1em;
+	top: 2px;
+}
+
+/* Fill up */
+.dots-fillup li a {
+	overflow: hidden;
+	//this is the fill color:
+	//background-color: $base-font-color;
+	//this is the circle
+	box-shadow: inset 0 0 0 2px darken($base-font-color, 25%);
+	transition: background 0.3s;
+}
+
+.dots-fillup li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	left: 0;
+	width: 100%;
+	//this is the fill color for the selected dot;
+	background-color: darken($base-font-color, 25%);
+	box-shadow: 0 0 1px #fff;
+	transition: height 0.3s;
+}
+
+.dots-fillup li a:hover,
+.dots-fillup li a:focus {
+	background-color: $base-font-color;
+}
+
+.dots-fillup li.current a::after {
+	height: 100%;
+}

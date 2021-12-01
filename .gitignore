@@ -1,0 +1,11 @@
+*.jpg
+*.png
+*.gif
+*.geojson
+
+# files
+.DS_Store
+robots.txt
+.htaccess
+
+# directories
