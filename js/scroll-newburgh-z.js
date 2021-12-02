@@ -93,17 +93,16 @@ var containerScene = new ScrollMagic.Scene({
 // Trying separate sequence just for the first trans
 // which will be a zoom.
 captionSeqElems[0].children().each(function(i) {
-	// Skip first image -- it's a pin, not a transition
-	if (i === 1) {
+	// try to zoom 1st image
+	if (i === 0) {
 		// Current target is +1 because 1st div in image panel is title
-		var targetPrev = imageSeqElems[0].children().eq(i -1);
+		// var targetPrev = imageSeqElems[0].children().eq(i -1);
 		let target = imageSeqElems[0].children().eq(i);
 
 		var tl = new TimelineMax();
 		// Base transitin condition class name
 		// "this" is not a jQuery object, so need straight JS
-		tl.to(target, 2, {autoAlpha:1})
-			.to(targetPrev, 1, {autoAlpha:0});			
+		tl.to(target, 2, {scale:3});			
 
 		new ScrollMagic.Scene({
 			triggerElement: this,
