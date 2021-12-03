@@ -329,6 +329,10 @@ div.full-image p {
   font-style: normal;
 }
 
+.caption-panel div h4 {
+  font-weight: bold;
+}
+
 a.caption-link {
   color: #B25900;
   text-decoration: underline;
