@@ -133,6 +133,7 @@ a {
   text-decoration: none;
   transition: color 150ms ease;
 }
+
 a:active, a:focus, a:hover {
   color: shade(#e4e0c7, 25%);
 }
@@ -167,6 +168,7 @@ h1 {
 h3 {
   text-align: center;
 }
+
 h3.grid-title {
   color: #B25900;
   letter-spacing: .075em;
@@ -203,6 +205,7 @@ h3.grid-title {
   transform-origin: 0 0;
   transform: rotate(-90deg);
 }
+
 .sidebar a {
   color: #e4e0c7;
   font-size: 1em;
@@ -252,6 +255,7 @@ header.story-title {
 div.full-image {
   position: relative;
 }
+
 div.full-image p {
   background-color: #353526;
   border: 1px solid #e4e0c7;
@@ -299,7 +303,8 @@ div.full-image p {
 .caption-panel {
   position: relative;
   z-index: 10;
-  margin: 1em;
+  margin: 1em 1em 1em 50%;
+  width: 100%;
 }
 
 .caption-panel div {
@@ -311,14 +316,17 @@ div.full-image p {
   margin-top: -10em;
   width: 40%;
 }
+
 .caption-panel div.narrower {
   width: 30%;
 }
+
 .caption-panel div p.gallery-caption {
   width: 25%;
   font-size: 0.75em;
   float: left;
 }
+
 .caption-panel div p.gallery-quote {
   font-size: 1em;
   padding-left: 1em;
@@ -346,21 +354,25 @@ a.caption-link {
   position: relative;
   padding-top: 56.25%;
 }
+
 #video-content video {
   position: absolute;
 }
+
 #video-content video.both {
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
 }
+
 #video-content video.left {
   left: 0;
   top: 0;
   height: 50%;
   width: 50%;
 }
+
 #video-content video.right {
   left: 51%;
   top: 0;
@@ -386,6 +398,7 @@ a.caption-link {
 nav.main-menu {
   text-align: center;
 }
+
 nav.main-menu li {
   border-right: thin solid #e4e0c7;
   display: inline;
@@ -395,9 +408,11 @@ nav.main-menu li {
   padding: 0 2em;
   text-transform: uppercase;
 }
+
 nav.main-menu li.last-menu-item {
   border-right: none;
 }
+
 nav.main-menu li.selected a {
   color: #B25900;
 }
@@ -419,6 +434,7 @@ header.story-title nav#dropdown-parent {
 .dropdown-menu {
   list-style-type: none;
 }
+
 .dropdown-menu li a {
   background-color: rgba(178, 89, 0, 0.9);
   border: 1px solid #B25900;
